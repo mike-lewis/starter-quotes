@@ -28,6 +28,15 @@ Assumed: CI system folder is in ../system3
 If you change the system folder configuration setting, your webapp will break
 when I try to test it on my system!
 
+
+*********
+Work
+*********
+JL - Links 1, 4
+ML - Links 2, 5, 7
+HWF - Links 3, 6, 8
+
+
 *******
 License
 *******
