@@ -44,6 +44,7 @@ $route['first'] = 'first';
 $route['last'] = 'last/welcome';
 $route['(:any)'] = "first/$1";
 $route['lock/(:any)/(:any)'] = "welcome/shucks";
+$route['([a-zA-Z]{4,4})/bingo'] = 'bingo'; // Regular expression matches exactly 4 chars (upper or lower)
 
 
 
