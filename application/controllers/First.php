@@ -22,8 +22,9 @@ class First extends Application
         }
         else
         {
-            echo 'not found';
+            $this->index();
         }
+
     }
 
     function index()
