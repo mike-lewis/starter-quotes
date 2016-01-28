@@ -14,11 +14,15 @@ class First extends Application
         parent::__construct();
     }
 
-    public function _remap($method)
+    public function _remap($method, $params = array())
     {
         if($method == 'sleep')
         {
             $this->zzz();
+        }
+        elseif ($method == 'gimmie')
+        {
+            return call_user_func_array(array($this, $method), $params);
         }
         else
         {
@@ -43,7 +47,11 @@ class First extends Application
 
     function gimmie($id)
     {
+        $record = $this->quotes->get($id);
+        $this->data = array_merge($this->data, $record);
+        $this->data['pagebody'] = 'justone';
 
+        $this->render();
     }
 }
 
