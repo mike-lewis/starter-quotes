@@ -2,11 +2,11 @@
 
 /**
  *
- * controllers/Last.php
+ * controllers/Welcome.php
  *
  * ------------------------------------------------------------------------
  */
-class Last extends Application
+class Welcome extends Application
 {
 
     function __construct()
