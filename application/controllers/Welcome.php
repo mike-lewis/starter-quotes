@@ -34,6 +34,14 @@ class Welcome extends Application {
 		$this->render();
 	}
 
+	function shucks(){
+		$record = $this->quotes->get(2);
+		$this->data = array_merge($this->data, $record);
+		$this->data['pagebody'] = 'justone';	// this is the view we want shown
+
+		$this->render();
+	}
+
 }
 
 /* End of file Welcome.php */
