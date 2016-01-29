@@ -15,8 +15,8 @@ class Wise extends Application
 
     function bingo()
     {
-        $record                 = $this->quotes->get(6);
-        $this->data             = array_merge($this->data, $record);
+        $record = $this->quotes->get(6);
+        $this->data = array_merge($this->data, $record);
         $this->data['pagebody'] = 'justone';	// this is the view we want shown
 
         $this->render();
