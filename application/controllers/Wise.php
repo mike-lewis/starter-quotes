@@ -24,5 +24,5 @@ class Wise extends Application
 
 }
 
-/* End of file First.php */
-/* Location: application/controllers/First.php */
+/* End of file Wise.php */
+/* Location: application/controllers/Wise.php */
