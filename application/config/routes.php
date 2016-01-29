@@ -44,7 +44,7 @@ $route['first'] = 'first';
 $route['last'] = 'last/welcome';
 $route['(:any)'] = "first/$1";
 $route['lock/(:any)/(:any)'] = "welcome/shucks";
-
+$route['show/(:num)'] = "first/gimmie/$1";
 
 
 /* End of file routes.php */
